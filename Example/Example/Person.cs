@@ -6,6 +6,7 @@ namespace Example
 {
     public class Person
     {
+        public string Nickname {get; set; }
         public string JobTitle { get; set; }
         public string Name { get; set; }
         public int ID { get; set; }
@@ -21,11 +22,12 @@ namespace Example
             ID = id;
         }
 
-        public Person(string name, int id, string jobTitle)
+        public Person(string name, int id, string jobTitle, string nickname)
         {
             Name = name;
             ID = id;
             JobTitle = jobTitle;
+            Nickname = nickname;
         }
     }
 }
