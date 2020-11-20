@@ -8,5 +8,16 @@ namespace Example
     {
         public string Name { get; set; }
         public int ID { get; set; }
+
+        public Person()
+        {
+
+        }
+
+        public Person(string name, int id)
+        {
+            Name = name;
+            ID = id;
+        }
     }
 }
